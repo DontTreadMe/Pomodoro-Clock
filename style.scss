@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Jua|Oxygen+Mono');
+$mainColor: #1D63B6;
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $mainColor;
+  color: white;
+  font-family: 'Jua', sans-serif;
+  font-size: 34px;
+  text-align: center;
+}
+
+#conteiner {
+  min-width: 300px;
+  margin: 20px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#clock {
+  border: 5px solid white;
+  border-radius: 50px;
+  padding: 20px;
+}
+#clock-title {
+  font-size: 1.4em;
+}
+#lengths {
+  display: flex;
+}
+.sessionBreak {
+  margin: 10px;
+}
+#session-label, #break-label {
+  margin: 10px;
+}
+button {
+  color: white;
+  background-color: $mainColor;
+  border: none;
+}
+#time-left {
+  font-family: 'Oxygen Mono', monospace;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+#display {
+  width: 66%;
+  margin: 12px auto;
+  border: 5px solid white;
+  border-radius: 50px;
+  padding: 6px;
+}
+#time-left {
+  margin: auto;
+}
+@media only screen and (max-width: 400px) {
+  body, button {
+    font-size: 0.9em;
+  }
+} 
